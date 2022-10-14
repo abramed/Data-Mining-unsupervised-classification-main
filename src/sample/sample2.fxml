@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="576.0" prefWidth="264.0" style="-fx-background-color: #05071F;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="67.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="50.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../images/ARTIFICIAL_INTELLIGENCE-512.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="17.0" prefWidth="75.0" text="Data Mining" textFill="#e7e5e5">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#affiche_home" prefHeight="42.0" prefWidth="314.0" stylesheets="@home2.css" text="Home" textFill="#e7e5e5">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/garage-2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#descriptionData" prefHeight="42.0" prefWidth="298.0" stylesheets="@home2.css" text="Description">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/online-booking.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#affiche_kmeans" prefHeight="42.0" prefWidth="298.0" stylesheets="@home2.css" text="K-means">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/area-chart-graph-visualisation-512-2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#affiche_kmedoid" prefHeight="42.0" prefWidth="297.0" stylesheets="@home2.css" text="K-medoids">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/report.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#affiche_clarans" prefHeight="42.0" prefWidth="281.0" stylesheets="@home2.css" text="CLARANS ">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/computer-technology-screen-display-monitor-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#affiche_apriori" prefHeight="42.0" prefWidth="305.0" stylesheets="@home2.css" text="A-PRIORI ">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/29-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#affiche_comparaison" prefHeight="42.0" prefWidth="307.0" stylesheets="@home2.css" text="Comparaison">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/pie-chart-data-visualisation-512-2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#retour" prefHeight="42.0" prefWidth="286.0" stylesheets="@home2.css" text="Retour">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/018_098_arrow_back_reply-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#exit" prefHeight="42.0" prefWidth="286.0" stylesheets="@home2.css" text="Fermer">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/_logout_rounded_disconnect_exit_-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="description" layoutX="258.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A #02030A;">
+         <children>
+            <Label layoutX="223.0" layoutY="30.0" text="Description des entrées et d'attributs" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="69.0" layoutY="110.0" text="Title of Database" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="69.0" layoutY="154.0" text="Number of Instances" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="197.0" text="Number of Attributes" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="360.0" text="Attributes description" textFill="#fe0000">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextArea editable="false" layoutX="69.0" layoutY="394.0" prefHeight="138.0" prefWidth="469.0" style="-fx-background-color: #fff;" text="   - Class attribute (1 = normal, 2 = hyper, 3 = hypo)&#10;   - T3-resin uptake test. (A percentage)&#10;   - Total Serum thyroxin as measured by the isotopic displacement method. &#10;   - Total serum triiodothyronine as measured by radioimmuno assay.&#10;    basal thyroid-stimulating hormone (TSH) as measured by radioimmuno    assay.&#10;   - Maximal absolute difference of TSH value after injection of 200 micro grams of  &#10;thyrotropin-releasing hormone as compared to the basal value.&#10;" unFocusColor="BLACK" />
+            <JFXTextField editable="false" layoutX="258.0" layoutY="107.0" style="-fx-background-color: #fff;" text="  Thyroid gland data" />
+            <JFXTextField editable="false" layoutX="258.0" layoutY="151.0" style="-fx-background-color: #fff;" text="  215" />
+            <JFXTextField editable="false" layoutX="258.0" layoutY="194.0" style="-fx-background-color: #fff;" text="  5" />
+            <Label layoutX="70.0" layoutY="250.0" text="Number of instances per class" textFill="#fe0000">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextArea editable="false" layoutX="70.0" layoutY="278.0" prefHeight="67.0" prefWidth="202.0" style="-fx-background-color: #fff;" text="   Class 1: (normal)&#9;       150&#10;   Class 2: (hyper)&#9;         35&#10;   Class 3: (hypo)&#9;&#9; 30&#10;" unFocusColor="BLACK" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="CorrPane" layoutX="258.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A;">
+         <children>
+            <Label layoutX="326.0" layoutY="44.0" text="Corrélations " textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="clarans" layoutX="258.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A #02030A #02030A;">
+         <children>
+            <Label layoutX="339.0" layoutY="23.0" prefHeight="31.0" prefWidth="128.0" text="CLARANS" textFill="#fffefe">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="nombre_cluster2" layoutX="160.0" layoutY="54.0" prefHeight="38.0" prefWidth="141.0" stylesheets="@home2.css" />
+            <JFXTextField fx:id="numlocal" layoutX="160.0" layoutY="154.0" prefHeight="38.0" prefWidth="141.0" stylesheets="@home2.css" />
+            <JFXTextField fx:id="max_neigbors" layoutX="160.0" layoutY="107.0" prefHeight="38.0" prefWidth="141.0" stylesheets="@home2.css" />
+            <Label layoutX="25.0" layoutY="64.0" prefHeight="38.0" prefWidth="126.0" text="Nombre de cluster" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="164.0" prefHeight="28.0" prefWidth="126.0" text="Num local" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="117.0" prefHeight="29.0" prefWidth="126.0" text="Max Neighbors" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="affich_clarens" layoutX="25.0" layoutY="276.0" prefHeight="224.0" prefWidth="725.0" stylesheets="@home2.css" />
+            <JFXTextField fx:id="cout2" layoutX="180.0" layoutY="504.0" prefHeight="38.0" prefWidth="141.0" stylesheets="@home2.css" />
+            <Label layoutX="37.0" layoutY="514.0" prefHeight="28.0" prefWidth="126.0" text="Cout" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="temps_execution_cluster2" layoutX="569.0" layoutY="509.0" prefHeight="38.0" prefWidth="141.0" stylesheets="@home2.css" />
+            <Label layoutX="426.0" layoutY="519.0" prefHeight="28.0" prefWidth="126.0" text="Temps d'execution" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="25.0" layoutY="213.0" onAction="#calculer3" prefHeight="29.0" prefWidth="75.0" style="-fx-background-color: #ff0000;" text="Calculer" textFill="#fffdfd" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="kmedoidAnchor" layoutX="258.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A #02030A #02030A #02030A;">
+         <children>
+            <Label layoutX="323.0" layoutY="50.0" prefHeight="28.0" prefWidth="256.0" text="K-medoids" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="affich_kmeans1" layoutX="81.0" layoutY="161.0" prefHeight="305.0" prefWidth="632.0" style="-fx-background-color: #05071F #05071F;" stylesheets="@home2.css" unFocusColor="BLACK" />
+            <JFXTextField fx:id="nombre_cluster1" layoutX="359.0" layoutY="112.0" prefHeight="27.0" prefWidth="183.0" stylesheets="@home2.css" />
+            <Label layoutX="154.0" layoutY="117.0" text="Donner le nombre de cluster" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="568.0" layoutY="110.0" onAction="#calculer2" prefHeight="29.0" prefWidth="101.0" style="-fx-background-color: #ff0000;" text="Calculer" textFill="WHITE" />
+            <JFXTextField fx:id="cout1" layoutX="190.0" layoutY="510.0" prefHeight="38.0" prefWidth="141.0" stylesheets="@home2.css" />
+            <Label layoutX="47.0" layoutY="520.0" prefHeight="28.0" prefWidth="126.0" text="Cout" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="temps_execution_cluster1" layoutX="579.0" layoutY="515.0" prefHeight="38.0" prefWidth="141.0" stylesheets="@home2.css" />
+            <Label layoutX="436.0" layoutY="525.0" prefHeight="28.0" prefWidth="126.0" text="Temps d'execution" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="kmeansAnchor" layoutX="258.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A #02030A #02030A #02030A #02030A #02030A;">
+         <children>
+            <Label layoutX="324.0" layoutY="48.0" prefHeight="31.0" prefWidth="145.0" text="K-means" textFill="#fffefe">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="affich_kmeans" layoutX="81.0" layoutY="175.0" prefHeight="305.0" prefWidth="632.0" stylesheets="@home2.css" unFocusColor="BLACK" />
+            <JFXTextField fx:id="nombre_cluster" layoutX="359.0" layoutY="126.0" prefHeight="27.0" prefWidth="183.0" stylesheets="@home2.css" />
+            <Label layoutX="154.0" layoutY="131.0" text="Donner le nombre de cluster" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="568.0" layoutY="124.0" onAction="#calculer" prefHeight="29.0" prefWidth="101.0" style="-fx-background-color: #ff0000;" text="Calculer" textFill="WHITE" />
+            <JFXTextField fx:id="cout" layoutX="183.0" layoutY="508.0" prefHeight="38.0" prefWidth="141.0" stylesheets="@home2.css" />
+            <Label layoutX="40.0" layoutY="518.0" prefHeight="28.0" prefWidth="126.0" text="Cout" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="temps_execution_cluster" layoutX="572.0" layoutY="513.0" prefHeight="38.0" prefWidth="141.0" stylesheets="@home2.css" />
+            <Label layoutX="429.0" layoutY="523.0" prefHeight="28.0" prefWidth="126.0" text="Temps d'execution" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <StackPane fx:id="home" layoutX="258.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A;">
+         <children>
+            <Pane fx:id="pnlCustomer" prefHeight="200.0" prefWidth="200.0" />
+            <Pane fx:id="pnlOrders" prefHeight="200.0" prefWidth="200.0" />
+            <Pane fx:id="pnlMenus" prefHeight="200.0" prefWidth="200.0" />
+            <Pane fx:id="pnlOverview" prefHeight="554.0" prefWidth="793.0">
+               <children>
+                  <TextField layoutX="518.0" layoutY="32.0" prefHeight="27.0" prefWidth="183.0" promptText="search" style="-fx-background-color: #02030A; -fx-border-color: #B7C3D7; -fx-border-radius: 2em;" />
+                  <Label layoutX="89.0" layoutY="33.0" text="Data Mining " textFill="#e7e5e5">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" layoutX="89.0" layoutY="76.0" prefHeight="92.0" prefWidth="531.0" spacing="50.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="92.0" prefWidth="124.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="92.0" prefWidth="120.0">
+                                 <children>
+                                    <Label fx:id="sizeInstance" text="0" textFill="#2a73ff">
+                                       <font>
+                                          <Font name="System Bold" size="26.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Number of Instances" textFill="#e7e5e5" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="92.0" prefWidth="128.0">
+                           <children>
+                              <Label fx:id="sizeAttribut" text="0" textFill="#26bfbc">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Number of Attributes " textFill="#e7e5e5" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="92.0" prefWidth="109.0">
+                           <children>
+                              <Label fx:id="sizeClass" text="0" textFill="#de0000">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Number of classes" textFill="#e7e5e5" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="17.0" fitWidth="16.0" layoutX="724.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../RestaurantMgtSampleUI-master/src/images/icons8_Search_52px.png" />
+                     </image>
+                  </ImageView>
+                  <TableView fx:id="table" layoutX="57.0" layoutY="179.0" prefHeight="358.0" prefWidth="703.0" stylesheets="@home2.css">
+                     <columns>
+                        <TableColumn fx:id="Class_attribute" prefWidth="110.0" text="Class attribute" />
+                        <TableColumn fx:id="T3_resin" text="T3-resin " />
+                        <TableColumn fx:id="thyroxin" text="Thyroxin " />
+                        <TableColumn fx:id="triodothyronine" prefWidth="119.0" text="Triodothyronine" />
+                        <TableColumn fx:id="TSH" prefWidth="79.0" text="TSH" />
+                        <TableColumn fx:id="Max_TSH" prefWidth="234.0" text="Maximal absolute difference of TSH " />
+                     </columns>
+                  </TableView>
+                  <JFXTextField fx:id="add_file" layoutX="596.0" layoutY="109.0" prefHeight="27.0" prefWidth="128.0" promptText="          Import data" style="-fx-background-color: #fff;" unFocusColor="BLACK" />
+                  <JFXButton layoutX="596.0" layoutY="109.0" onAction="#getdata" prefHeight="27.0" prefWidth="128.0" style="-fx-background-color: #de0000;" text="Import data" textFill="WHITE" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+      <AnchorPane fx:id="comparaisonAnchor" layoutX="258.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A #02030A #02030A #02030A #02030A #02030A;">
+         <children>
+            <Label layoutX="324.0" layoutY="48.0" prefHeight="31.0" prefWidth="145.0" text="Comparaison" textFill="#fffefe">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="attributeAlgo" layoutX="296.0" layoutY="104.0" onAction="#choiseMethod" prefHeight="27.0" prefWidth="202.0" promptText="  Attribute" style="-fx-background-color: #fff;" />
+            <TableView fx:id="table_comp" layoutX="139.0" layoutY="209.0" prefHeight="159.0" prefWidth="541.0" stylesheets="@home2.css">
+               <columns>
+                  <TableColumn fx:id="k" prefWidth="158.0" text="K" />
+                  <TableColumn fx:id="cout_algo" prefWidth="184.0" text="Cout" />
+                  <TableColumn fx:id="temps_exe" prefWidth="198.0" text="Temps d'execution" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="aprioriAnchor" layoutX="258.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A #02030A #02030A #02030A #02030A #02030A;">
+         <children>
+            <Label layoutX="324.0" layoutY="48.0" prefHeight="31.0" prefWidth="145.0" text="Apriori" textFill="#fffefe">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="affich_apriori" layoutX="38.0" layoutY="175.0" prefHeight="374.0" prefWidth="703.0" stylesheets="@home2.css" unFocusColor="BLACK" />
+            <JFXTextField fx:id="msp" layoutX="40.0" layoutY="111.0" prefHeight="42.0" prefWidth="250.0" promptText="Minimum Support in Percent" stylesheets="@home2.css" />
+            <JFXButton layoutX="643.0" layoutY="124.0" onAction="#calculerApriori" prefHeight="29.0" prefWidth="101.0" style="-fx-background-color: #ff0000;" text="Calculer" textFill="WHITE" />
+            <JFXTextField fx:id="mcp" layoutX="324.0" layoutY="111.0" prefHeight="42.0" prefWidth="275.0" promptText="Minimum Confidence in Percent" stylesheets="@home2.css" />
+         </children>
+      </AnchorPane>
+   </children>
+   <effect>
+      <DropShadow color="#1b1eeb" />
+   </effect>
+</AnchorPane>
